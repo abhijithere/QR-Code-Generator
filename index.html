@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <!-- h-[520px] -->
+</head>
+<body class="bg-blue-300 h-screen w-screen flex justify-center items-center">
+        <div class="box w-64 min-[350px]:w-80 min-[430px]:w-96 min-[520px]:w-[450px] h-[300px] bg-white flex flex-col  items-center rounded-lg mb-14 absolute">
+            <h1 class="text-md min-[350px]:text-xl min-[430px]:text-2xl mt-6">QR Code Generator</h1>
+            <p class="text-xs min-[350px]:text-sm font-light mt-3">paste a url or enter any text to generate QR-Code</p>
+            <input type="text" placeholder="Enter text or url" class="input-text border border-gray-500 w-60 min-[350px]:w-72 min-[430px]:w-80 p-3 rounded-md mt-9 pl-3 ">
+            <button class="btn w-60 min-[350px]:w-72 min-[430px]:w-80 bg-blue-600 text-white p-3 rounded-md mt-4 hover:bg-blue-500">Generate QR code</button>
+            <div class="qr-img mt-6 h-56 pointer-events-none opacity-0 border border-gray-300 w-60 min-[350px]:w-72 min-[430px]:w-80 flex justify-center items-center rounded-md">
+                <img src="" alt="" class="img-sec h-44 w-44 ">
+            </div>
+        </div>
+        <script src="index.js"></script>
+</body>
+</html>

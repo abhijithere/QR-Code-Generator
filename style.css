@@ -1,0 +1,11 @@
+.box.active{
+    height: 520px ;
+}
+.box{
+    transition: height 0.4s ease;
+}
+.box.active .qr-img{
+    opacity: 1;
+    transition:  0.5s .05s ease-in-out;
+    pointer-events: auto;
+}
